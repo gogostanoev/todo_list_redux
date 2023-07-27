@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { TodoForm } from "../../Components/TodoForm/TodoForm"
 import { Counter } from "../../Components/Counter/Counter";
 import "./Todo.scss";
-import todoImage from "../Todo/images/todo.png";
+import todoImage from "src/Components/Todo/images/todo.png";
 
 export const Todo = () => {
     const dispatch = useDispatch();
