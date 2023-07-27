@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { TodoForm } from "../../Components/TodoForm/TodoForm"
 import { Counter } from "../../Components/Counter/Counter";
 import "./Todo.scss";
-import todoImage from "src/Components/Todo/images/todo.png";
+// import todoImage from "src/Components/Todo/images/todo.png";
 
 export const Todo = () => {
     const dispatch = useDispatch();
@@ -47,7 +47,7 @@ export const Todo = () => {
                 <Counter />
                 <div className="heading-container">
                     <h1>To-Do List</h1>
-                    <img src={todoImage} alt="todo image" />
+                    <img src={process.env.PUBLIC_URL + '/todo.png'} alt="todo image" />
                 </div>
                 <TodoForm />
 
