@@ -1,0 +1,10 @@
+.counter-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    .counter-item {
+        flex: 1;
+        color: white;
+    }
+}

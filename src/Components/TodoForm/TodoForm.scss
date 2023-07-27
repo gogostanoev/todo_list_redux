@@ -1,0 +1,33 @@
+.todoForm {
+
+    input {
+        outline: none;
+        background-color: azure;
+        border: 1px solid #3269e0;
+        padding: 0.5rem 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        width: 300px;
+    }
+
+    input::placeholder {
+        color: #000000c2;
+    }
+
+    button {
+        background: #8758ff;
+        color: #fff;
+        border: none;
+        padding: 0.55rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #7e48db;
+        }
+
+        &:active {
+            background-color: #bca8ee;
+        }
+    }
+}

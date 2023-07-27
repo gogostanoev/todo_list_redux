@@ -1,0 +1,83 @@
+.todo-container {
+    background: #4040af;
+    margin-top: 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+
+    .heading-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        h1 {
+            color: #fff;
+            margin-right: 10px;
+            font-size: 1.75rem;
+        }
+
+        img {
+            width: 40px;
+            height: auto;
+        }
+    }
+
+    .todo-items-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+
+        .div-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #8758ff;
+            color: #fff;
+            padding: 0.75rem 1rem;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+
+            .todo-text {
+                flex: 1;
+                text-decoration: none;
+                opacity: 1;
+            }
+
+            .actions {
+                display: flex;
+                align-items: center;
+            }
+
+            input {
+                margin-left: auto;
+                cursor: pointer;
+            }
+
+            button {
+                margin-left: 1rem;
+                width: 25px;
+                height: 25px;
+                font-size: 13px;
+                border-radius: 50%;
+                cursor: pointer;
+                border-style: none;
+            }
+
+            button:hover {
+                background-color: #bca8ee;
+            }
+
+            &.completed .todo-text {
+                text-decoration: line-through;
+                text-decoration-thickness: .25rem;
+                text-decoration-color: black;
+                opacity: 0.7;
+            }
+        }
+    }
+
+    .no-tasks {
+        text-align: center;
+        font-size: 1.3rem;
+        color: #ffffff; 
+    }
+}
