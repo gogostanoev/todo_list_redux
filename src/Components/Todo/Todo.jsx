@@ -47,7 +47,7 @@ export const Todo = () => {
                 <Counter />
                 <div className="heading-container">
                     <h1>To-Do List</h1>
-                    <img src={process.env.PUBLIC_URL + '/todo.png'} alt="todo image" />
+                    <img src="/todo.png" alt="todo image" />
                 </div>
                 <TodoForm />
 
